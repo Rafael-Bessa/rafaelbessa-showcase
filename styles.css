@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.about h2, .experience h2, .education h2, .projects h2, .contact h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Animações */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+.about h2, .experience h2, .education h2, .projects h2, .contact h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+    animation: fadeInBorder 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInBorder {
+    to {
+        border-color: #333;
+    }
+}
+
+/* Mais animações */
+.container {
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* ... Seu CSS existente ... */
+
+/* Mais estilos */
+.course-category {
+    margin-top: 2rem;
+}
+
+.course-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.course-category ul {
+    list-style: disc;
+    margin-left: 2rem;
+}
+
+.course-category li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+
